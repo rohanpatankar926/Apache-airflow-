@@ -3,20 +3,20 @@
 2.Now type `sudo docker build -t avnish327030/spark-hadoop-airflow`<br>
 3.`sudo docker tag avnish327030/spark-hadoop-airflow spark-hadoop-airflow`<br>
 4.PROJECT_DIR=$(pwd)<br>
-5.`docker run -it \<br>
-    -p 9870:9870 \<br>
-    -p 8088:8088 \<br>
-    -p 8080:8080 \<br>
-    -p 18080:18080 \<br>
-    -p 9000:9000 \<br>
-    -p 8888:8888 \<br>
-    -p 9864:9864 \<br>
-    -p 8085:8085 \<br>
-    -p 8793:8793 \<br>
-    -p 8081:8081 \<br>
-    -v $PROJECT_DIR/notebook:/root/ipynb \<br>
-    -v $PROJECT_DIR/airflow:/home/airflow \<br>
-    -v $PROJECT_DIR/data:/data \<br>
+5.`docker run -it \
+    -p 9870:9870 \
+    -p 8088:8088 \
+    -p 8080:8080 \
+    -p 18080:18080 \
+    -p 9000:9000 \
+    -p 8888:8888 \
+    -p 9864:9864 \
+    -p 8085:8085 \
+    -p 8793:8793 \
+    -p 8081:8081 \
+    -v $PROJECT_DIR/notebook:/root/ipynb \
+    -v $PROJECT_DIR/airflow:/home/airflow \
+    -v $PROJECT_DIR/data:/data \
     spark-hadoop-airflow`<br>
 6.`http://localhost:8085/` run this into local browser and start building data pipelines using airflow :)<br>
 7.<a href="http://localhost:8085/">Namenode</a>  <a href="http://localhost:9864/">DataNode</a>  <a href="http://localhost:8088/">Hadoop cluster</a> <a href="http://localhost:8080/">Spark Master</a>  <a href="http://localhost:8888/">Jupyter Lab</a><br>
