@@ -1,0 +1,22 @@
+[2022-09-20 00:02:40,564] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: dag_with_taskflow_api.extract manual__2022-09-19T18:32:33.175683+00:00 [queued]>
+[2022-09-20 00:02:40,573] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: dag_with_taskflow_api.extract manual__2022-09-19T18:32:33.175683+00:00 [queued]>
+[2022-09-20 00:02:40,573] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-20 00:02:40,573] {taskinstance.py:1250} INFO - Starting attempt 1 of 6
+[2022-09-20 00:02:40,573] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-20 00:02:40,587] {taskinstance.py:1270} INFO - Executing <Task(_PythonDecoratedOperator): extract> on 2022-09-19 18:32:33.175683+00:00
+[2022-09-20 00:02:40,589] {standard_task_runner.py:52} INFO - Started process 2864 to run task
+[2022-09-20 00:02:40,593] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dag_with_taskflow_api', 'extract', 'manual__2022-09-19T18:32:33.175683+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/dag_taskflow_api.py', '--cfg-path', '/tmp/tmp59r70vhk', '--error-file', '/tmp/tmpkgbaapr4']
+[2022-09-20 00:02:40,593] {standard_task_runner.py:80} INFO - Job 34: Subtask extract
+[2022-09-20 00:02:40,628] {logging_mixin.py:109} INFO - Running <TaskInstance: dag_with_taskflow_api.extract manual__2022-09-19T18:32:33.175683+00:00 [running]> on host 8eb0791cd07b
+[2022-09-20 00:02:40,662] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=rohan patankar
+AIRFLOW_CTX_DAG_ID=dag_with_taskflow_api
+AIRFLOW_CTX_TASK_ID=extract
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-19T18:32:33.175683+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-19T18:32:33.175683+00:00
+[2022-09-20 00:02:40,662] {python.py:175} INFO - Done. Returned value was: extracted
+[2022-09-20 00:02:40,674] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=dag_with_taskflow_api, task_id=extract, execution_date=20220919T183233, start_date=20220919T183240, end_date=20220919T183240
+[2022-09-20 00:02:40,724] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-20 00:02:40,742] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

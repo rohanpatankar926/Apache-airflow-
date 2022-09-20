@@ -1,0 +1,22 @@
+[2022-09-20 00:02:37,019] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: dag_with_taskflow_api.transform scheduled__2022-09-19T11:09:00+00:00 [queued]>
+[2022-09-20 00:02:37,026] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: dag_with_taskflow_api.transform scheduled__2022-09-19T11:09:00+00:00 [queued]>
+[2022-09-20 00:02:37,026] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-20 00:02:37,026] {taskinstance.py:1250} INFO - Starting attempt 1 of 6
+[2022-09-20 00:02:37,026] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-20 00:02:37,037] {taskinstance.py:1270} INFO - Executing <Task(_PythonDecoratedOperator): transform> on 2022-09-19 11:09:00+00:00
+[2022-09-20 00:02:37,040] {standard_task_runner.py:52} INFO - Started process 2855 to run task
+[2022-09-20 00:02:37,042] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dag_with_taskflow_api', 'transform', 'scheduled__2022-09-19T11:09:00+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/dag_taskflow_api.py', '--cfg-path', '/tmp/tmpbk_4cqy2', '--error-file', '/tmp/tmpcb6kgffe']
+[2022-09-20 00:02:37,043] {standard_task_runner.py:80} INFO - Job 32: Subtask transform
+[2022-09-20 00:02:37,071] {logging_mixin.py:109} INFO - Running <TaskInstance: dag_with_taskflow_api.transform scheduled__2022-09-19T11:09:00+00:00 [running]> on host 8eb0791cd07b
+[2022-09-20 00:02:37,099] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=rohan patankar
+AIRFLOW_CTX_DAG_ID=dag_with_taskflow_api
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-19T11:09:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-19T11:09:00+00:00
+[2022-09-20 00:02:37,100] {python.py:175} INFO - Done. Returned value was: transformed
+[2022-09-20 00:02:37,111] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=dag_with_taskflow_api, task_id=transform, execution_date=20220919T110900, start_date=20220919T183237, end_date=20220919T183237
+[2022-09-20 00:02:37,133] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-20 00:02:37,147] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

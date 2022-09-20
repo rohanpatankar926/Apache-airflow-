@@ -1,0 +1,22 @@
+[2022-09-19 23:42:30,628] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: dag2.subtract scheduled__2022-09-19T11:09:00+00:00 [queued]>
+[2022-09-19 23:42:30,638] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: dag2.subtract scheduled__2022-09-19T11:09:00+00:00 [queued]>
+[2022-09-19 23:42:30,638] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-19 23:42:30,638] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-09-19 23:42:30,638] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-19 23:42:30,650] {taskinstance.py:1270} INFO - Executing <Task(PythonOperator): subtract> on 2022-09-19 11:09:00+00:00
+[2022-09-19 23:42:30,652] {standard_task_runner.py:52} INFO - Started process 1586 to run task
+[2022-09-19 23:42:30,654] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dag2', 'subtract', 'scheduled__2022-09-19T11:09:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/dag2.py', '--cfg-path', '/tmp/tmpzv77alwh', '--error-file', '/tmp/tmpl9b060pu']
+[2022-09-19 23:42:30,655] {standard_task_runner.py:80} INFO - Job 4: Subtask subtract
+[2022-09-19 23:42:30,686] {logging_mixin.py:109} INFO - Running <TaskInstance: dag2.subtract scheduled__2022-09-19T11:09:00+00:00 [running]> on host 8eb0791cd07b
+[2022-09-19 23:42:30,719] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dag2
+AIRFLOW_CTX_TASK_ID=subtract
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-19T11:09:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-19T11:09:00+00:00
+[2022-09-19 23:42:30,720] {python.py:175} INFO - Done. Returned value was: -5
+[2022-09-19 23:42:30,741] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=dag2, task_id=subtract, execution_date=20220919T110900, start_date=20220919T181230, end_date=20220919T181230
+[2022-09-19 23:42:30,786] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-19 23:42:30,809] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
